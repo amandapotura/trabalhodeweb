@@ -1,0 +1,429 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --font-body: "Outfit", sans-serif;
+    --font-title: "Electrolize", sans-serif;
+    --color-greengls: #9ee599;
+    --color-purplegls: #3e276a;
+    --color-pinkgls: #ec85c3;
+    --color-bgmain: #fff2f9;
+    --color-bgods: #f7f2f8;
+    --color-bghovernav: #f7f2f8;
+}
+
+
+/*!------- CONFIGURAÇÕES PADRÕES ------- */
+
+/*! conf. do body pra ajitar o footer */
+@utility body{
+    @apply min-h-screen flex flex-col;
+}
+
+
+/*! NAVEGAÇÃO */
+
+@utility nav{
+    @apply  m-2 mt-3.5 mb-3.5 border rounded-2xl border-gray-100 lg:w-1/6 lg:text-sm ; 
+}
+
+@utility navul{
+    @apply flex flex-wrap justify-around  lg:flex-col lg:h-full;
+}
+
+@utility navli {
+  @apply lg:flex-1 hover:bg-bghovernav w-auto lg:ml-2 lg:mr-2 lg:border-b border-gray-200 ;
+}
+
+@utility navlia{
+    @apply flex items-center p-2 h-full w-full justify-between;
+}
+
+@utility liadiv{
+    @apply flex items-center;
+}
+
+@utility liadiv_inicio{
+    @apply hidden lg:block text-white p-1 bg-pinkgls rounded-[5px] h-7 w-7 mr-4;
+}  
+
+@utility inicio_p {
+    @apply text-pinkgls font-medium;
+}
+@utility inicio_arrow{
+     --fa-display: none;
+    color: var(--color-pinkgls);
+    
+    @media (width >= 64rem) {
+        --fa-display: inline-block;
+    };
+}
+@utility liadiv_objetivos {
+    @apply hidden lg:block text-white p-1 bg-greengls rounded-[5px] h-7 w-7 mr-4;
+} 
+
+@utility objetivos_p {
+    @apply text-greengls font-medium;
+}
+
+@utility objetivos_arrow{
+     --fa-display: none;
+    color: var(--color-greengls);
+    
+    @media (width >= 64rem) {
+        --fa-display: inline-block;
+    }}
+
+@utility liadiv_equipe{
+    @apply hidden lg:block text-white p-1 bg-purplegls rounded-[5px] h-7 w-7 mr-4;
+} 
+
+@utility equipe_p {
+    @apply text-purplegls font-medium;
+}
+
+@utility equipe_arrow{
+     --fa-display: none;
+    color: var(--color-purplegls);
+    
+    @media (width >= 64rem) {
+        --fa-display: inline-block;
+    }}
+
+@utility liadiv_projetos{
+    @apply hidden lg:block text-white p-1 bg-pinkgls rounded-[5px] h-7 w-7 mr-4;
+}  
+
+@utility projetos_p {
+    @apply text-pinkgls font-medium;
+}
+
+@utility projetos_arrow{
+    --fa-display: none;
+    color: var(--color-pinkgls);
+    
+    @media (width >= 64rem) {
+        --fa-display: inline-block;
+    }}
+
+@utility liadiv_contato{
+    @apply hidden lg:block text-white p-1 bg-purplegls rounded-[5px] h-7 w-7 mr-4;
+} 
+
+@utility contato_p {
+    @apply text-purplegls font-medium;
+}
+
+
+@utility contato_arrow {
+    --fa-display: none;
+    color: var(--color-purplegls);
+    
+    @media (width >= 64rem) {
+        --fa-display: inline-block;
+    }
+}
+
+@utility liadiv_inspiracoes{
+    @apply hidden lg:block text-white p-1 bg-greengls rounded-[5px] h-7 w-7 mr-4;
+} 
+
+@utility inspiracoes_p{
+    @apply text-greengls font-medium ;
+}
+
+@utility inspiracoes_arrow {
+    --fa-display: none;
+    color: var(--color-greengls);
+    
+    @media (width >= 64rem) {
+        --fa-display: inline-block;
+    }
+}
+/*! FIM NAV */
+
+
+
+/*! HEADER */
+@utility header {
+    @apply bg-purplegls p-1 text-white min-h-12;
+}
+@utility headerdiv {
+    @apply flex container items-center;
+}
+
+@utility headerdivimg {
+    @apply max-h-10  m-2 pl-3 lg:max-h-20 lg:m-4 lg:pl-8;
+}
+
+@utility headerdivdiv {
+    @apply flex flex-col justify-start place-items-center w-160 lg:w-160;
+}
+
+@utility headerdivdivtittle {
+    @apply font-title text-[19.5px] lg:text-4xl font-black;
+}
+
+@utility headerdivdivtittle2 {
+    @apply text-greengls;
+}
+
+@utility headerdivdivslogan {
+    @apply font-body items-center text-pinkgls text-[11px] lg:text-[18px];
+}
+
+@utility headerdivbutton {
+    @apply flex container place-content-end pr-2;
+}
+
+@utility headerdivbuttonconf {
+    @apply bg-pinkgls font-bold hover:bg-pink-500 px-4 py-2 text-[7px] lg:px-6 lg:py-2 lg:text-[15px] rounded-4xl;
+}
+
+@utility headerh1 {
+    @apply font-title lg:text-4xl text-3xl font-black;
+}
+
+@utility headerh1span {
+    @apply text-greengls;
+}
+/*! FIM HEADER */
+
+
+/*! MAIN */
+
+@utility main{
+    @apply flex-1;
+}
+
+@utility maindiv {
+    @apply lg:flex justify-center;
+}
+
+
+@utility maindivcontent {
+    @apply  m-2 mt-3.5 mb-3.5 border border-gray-100 rounded-3xl lg:w-4/6;
+}
+
+@utility contenttitle {
+    @apply flex p-4 items-center;
+}
+
+@utility contenttitlediv {
+    @apply pr-2 text-[13px]  text-pinkgls;
+}
+
+@utility contenttitleh2 {
+    @apply font-bold text-[15px] text-purplegls pr-3;
+}
+
+@utility contenttitlei1 {
+    @apply text-[7px] mr-1 text-pinkgls;
+}
+
+@utility contenttitlei2 {
+    @apply text-[7px] mr-1 text-purplegls;
+}
+
+@utility contenttitlei3 {
+    @apply text-[7px] mr-1 text-greengls;
+}
+
+@utility contentimg_and_p {
+    @apply flex flex-col lg:flex-row items-center lg:mt-8;
+}
+
+@utility contentp {
+    @apply text-purplegls font-body font-medium text-[15px] mr-4 ml-3 mb-4 text-justify;
+}
+/*! FIM DO MAIN */
+
+
+/*! ODSs */
+@utility divods {
+    @apply m-2 mt-3.5 mb-3.5 border border-gray-100  rounded-3xl lg:w-1/6;
+}
+
+@utility divodsdiv{
+    @apply flex p-4;
+}
+
+@utility divodstitle{
+    @apply flex items-center;
+}
+
+@utility divodstitle_i1{
+    @apply text-[7px] text-pinkgls pr-4;
+}
+
+@utility divodstitle_h2{
+    @apply  font-bold text-[13px] text-purplegls pr-3;
+}
+
+@utility divodstitle_i2{
+    @apply text-[7px] text-greengls;
+}
+
+@utility odslinks {
+    @apply flex flex-wrap justify-around lg:flex-col lg:gap-10 m-3 lg:items-center;
+}
+
+@utility odsborder {
+    @apply bg-bgods rounded-3xl mb-2 flex justify-center max-w-70;
+}
+
+@utility ods4links {
+    @apply w-40 lg:w-52 hover:border-2 border-pinkgls rounded-3xl;
+}
+
+@utility ods5links {
+    @apply w-40 lg:w-52 hover:border-2 border-greengls rounded-3xl;
+}
+/*! FIM DAS ODSs */
+
+
+/*! FOOTER */
+@utility footer {
+    @apply bg-purplegls;
+}
+
+@utility footerdiv {
+    @apply grid grid-cols-1 lg:grid-cols-3 gap-8 px-10 py-8;
+}
+
+@utility divcol1 {
+    @apply font-bold text-white pl-2 text-[14px];
+}
+
+@utility divcol1_ul {
+    @apply space-y-3;
+}
+
+@utility divcol1_li1 {
+    @apply hover:text-greengls;
+}
+
+@utility col1_info1 {
+    @apply text-[16px];
+}
+
+@utility divcol1_li2 {
+    @apply hover:text-pinkgls;
+}
+
+@utility col1_info2 {
+    @apply text-[16px];
+}
+
+@utility divcol1_li3 {
+    @apply hover:text-purple-400;
+}
+
+@utility col1_info3 {
+    @apply text-[16px];
+}
+
+@utility divcol2 {
+    @apply flex flex-col lg:flex-row items-center justify-center text-center gap-3 font-bold text-white;
+}
+
+@utility div_logouffs {
+    @apply max-h-12 mr-4;
+}
+
+@utility divcol3 {
+    @apply flex justify-start lg:justify-end font-bold text-white text-[14px];
+}
+
+@utility divcol3_ul {
+    @apply space-y-3;
+}
+
+@utility divcol3_li1 {
+    @apply hover:text-purple-400;
+}
+
+@utility col3_info1 {
+    @apply text-[16px];
+}
+
+@utility divcol3_li2 {
+    @apply hover:text-greengls;
+}
+
+@utility col3_info2 {
+    @apply text-[16px];
+}
+
+@utility divcol3_li3 {
+    @apply hover:text-pinkgls;
+}
+
+@utility col3_info3 {
+    @apply text-[16px];
+}
+
+@utility ecopy {
+    @apply py-4;
+}
+
+@utility ecopy_p {
+    @apply text-white text-center text-sm;
+}
+/*! FIM DO FOOTER*/
+
+
+
+/*!------- CONFIGURAÇÕES ESPECÍFICAS POR PÁGINA ------- */
+
+
+/*! equipe */
+@utility fontequipe {
+    @apply text-left font-body font-medium text-purplegls text-[15px] m-6 max-h-150 lg:max-h-110;
+}   
+
+@utility contentimg_equipe {
+    @apply p-1 h-35 lg:p-2 lg:h-40 rounded-2xl;
+}
+
+@utility content_por_pessoa{
+    @apply flex lg:items-center border border-gray-100 rounded-2xl m-2;
+}
+
+
+/*! objetivos*/
+@utility bolinhas {
+    @apply text-[5px] mr-1 text-pinkgls;
+}
+
+@utility contentulli {
+    @apply flex items-baseline;
+}
+
+/*! inspirações*/
+
+@utility contentmb_p{
+    @apply mb-2;
+}
+
+
+@utility contenth3 {
+    @apply text-[17px] font-bold;
+}
+
+/*!projetos*/
+
+@utility mb_por_projeto{
+    @apply mb-2;
+}
+
+@utility contentp_h3 {
+    @apply flex items-center text-[17px] font-bold
+}
+
+
+
