@@ -9,7 +9,7 @@
 
 ## Desenvolvimento
 
-<p>Buscamos criar uma estrutura que tivesse uma manutenção mais tranquila, considerando que sua estrutura princinipal é repetida em muitas páginas, o que nos levou a criação de muitas classes no input. Nosso objetivo era criar um site com uma estética bonita e que fosse 100% funcional mesmo sem usar JavaScript, já que não foi abordado durante as aulas. Para agilizar a sua construção, usamos o framework Tailwind CSS.</p>
+<p>Buscamos criar uma estrutura que tivesse uma manutenção mais tranquila, considerando que sua estrutura principal é repetida em muitas páginas, o que nos levou a criação de muitas classes no input. Nosso objetivo era criar um site com uma estética bonita e que fosse 100% funcional mesmo sem usar JavaScript, já que não foi abordado durante as aulas. Para agilizar a sua construção, usamos o framework Tailwind CSS.</p>
 <br>
 
 ## Tecnologias utilizadas
